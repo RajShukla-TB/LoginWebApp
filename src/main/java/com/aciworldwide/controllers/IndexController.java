@@ -1,0 +1,13 @@
+package com.aciworldwide.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class IndexController {//whenever request comes from root use this class function
+	@RequestMapping("/")
+	public String index() {
+		return "login";
+	}
+	
+}
